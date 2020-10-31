@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from "react"
+import Data from "./data"
+import List from "./list"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <main>
+      <section className = "container">
+        <h3>0 Birthdays today</h3>
+        <List/>
+        <button onClik = {console.log("Click me!")}>Clear all</button>
+      </section>
+    </main>
     </div>
   );
 }
