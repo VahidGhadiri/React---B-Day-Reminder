@@ -10,8 +10,8 @@ function App() {
       <section className = "container">
         <h3>{people.length} Birthdays today</h3>
         <List people={people}/>
-        <button onClik = {console.log("Click me!")}>Clear all</button>
-      </section>
+        <button onClik = {()=> setPeople([])}>Clear all</button>
+      </section> 
     </main>
   );
 }
